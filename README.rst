@@ -1,4 +1,4 @@
-elsa
+Description
 ====
 
 Elsa will help you build your `Frozen-Flask <http://pythonhosted.org/Frozen-Flask/>`_ based website and deploy it to GitHub pages.
@@ -87,5 +87,5 @@ URLs
 
 When you use URLs without trailing slash (e.g. ``https://example.com/foobar``), GitHub pages would serve the pages with bad Content-Type header
 (``application/octet-stream`` instead of ``text/html``) and the browser would attempt to download it.
-That's why Elsa will not allow such thing and will treat ``MimetypeMismatchWarning`` from Frozen-Flask as error.
+That's why Elsa won't allow such thing and will treat ``MimetypeMismatchWarning`` from Frozen-Flask as error.
 Make sure to use URLs with trailing slash (e.g. ``https://example.com/foobar/``) instead, so Frozen-Flask will create ``index.html`` in a folder and GitHub pages will use proper content type.
